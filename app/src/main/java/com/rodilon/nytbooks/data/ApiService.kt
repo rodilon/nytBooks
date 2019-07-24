@@ -11,5 +11,5 @@ object ApiService {
         .addConverterFactory(MoshiConverterFactory.create())
         .build()
 
-    val service = initRetrofit().create(NYTService::class.java)
+    val service: NYTService = initRetrofit().create(NYTService::class.java)
 }
